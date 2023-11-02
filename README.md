@@ -19,67 +19,70 @@
 
 ### Description
 
-    * Project:
+  * Project:
 
-        This project is a low level implementation of a Botnet Server & Client written in c++.
+    This project is a low level implementation of a Botnet Server & Client written in c++.
 
-    * Implementation:
-        the Server and Client use a custom library called utils. 
-        The utils library is implemented in the utils.cpp file. 
-        The utils library contains functionality shared and used by both the Server and Client.
+  * Implementation:
+    
+      the Server and Client use a custom library called utils. 
+      The utils library is implemented in the utils.cpp file. 
+      The utils library contains functionality shared and used by both the Server and Client.
 
-    * Server:
+### Server:
 
-        The Server listens and accepts other Servers and clients on two different ports, these ports are given as arguments when the Server is run.
+  The Server listens and accepts other Servers and clients on two different ports, 
+  these ports are given as arguments when the Server is run.
 
-        The Server accepts 6 different commands:
-            * QUERYSERVERS,<FROM_GROUP_ID>
+  The Server accepts 6 different commands:
 
-            * KEEPALIVE,<NO_OF_MESSAGS>
+  * QUERYSERVERS,<FROM_GROUP_ID>
 
-            * FETCH_MSG,<GROUP_ID>
+  * KEEPALIVE,<NO_OF_MESSAGS>
 
-            * SEND_MSG,<TO_GROUP_ID>,<FROM_GROUP_ID>,<MESSAGE_CONTENT>
+  * FETCH_MSG,<GROUP_ID>
 
-            * STATUSREQ,FROM_GROUP
+  * SEND_MSG,<TO_GROUP_ID>,<FROM_GROUP_ID>,<MESSAGE_CONTENT>
 
-            * STATUSRESP,FROM_GROUP,TO_GROUP,SERVER_MESSAGES_HELD
+  * STATUSREQ,FROM_GROUP
+
+  * STATUSRESP,FROM_GROUP,TO_GROUP,SERVER_MESSAGES_HELD
 
 
-    * Client
+### Client
 
-        The Client connects to a Server through an ip address and a port, the ip and port numbers are
-        given as arguments when the Client is run.
+  The Client connects to a Server through an ip address and a port, 
+  the ip and port numbers are given as arguments when the Client is run.
 
-        The Client accepts 3 different commands:
+  The Client accepts 3 different commands:
 
-            * GETMSG,GROUP_ID
-
-            * SENDMSG,GROUP_ID
-
-            * LISTSERVERS
+  * GETMSG,GROUP_ID
+  
+  * SENDMSG,GROUP_ID
+  
+  * LISTSERVERS
 
 
 ### Instructions on usage
 
-    * Make file
+  * Make file
+  
+      Firstly type the following into the terminal 
+      when located inside the project directory: 
 
-        Firstly type the following into the terminal 
-        when located inside the project directory: 
-    
-        ### make all 
+      ### make all 
 
-    * Server
+  * Server
+  
+      To run the Server type the following into the terminal 
+      when located inside the project directory:
+  
+      ### ./tsamgroup56 <Client port> <Server port>
 
-        To run the Server type the following into the terminal 
-        when located inside the project directory:
-
-        ### ./tsamgroup56 <Client port> <Server port>
-    
-    * Client
-
-        To run the Server type the following into the terminal 
-        when located inside the project directory:
-
-        ### ./client <Ip address> <Port number>
+  * Client
+  
+      To run the Server type the following into the terminal 
+      when located inside the project directory:
+  
+      ### ./client <Ip address> <Port number>
 
