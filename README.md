@@ -4,17 +4,17 @@
 
 ## Overview
 
-    * Decsription
+  * Decsription
 
-    * Instructions on usage
+  * Instructions on usage
 
-        * How to use:
-            
-            * make file
+      * How to use:
+          
+          * make file
 
-            * Server
+          * Server
 
-            * Client
+          * Client
 
 
 ### Description
