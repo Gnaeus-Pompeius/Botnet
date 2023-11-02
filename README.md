@@ -70,19 +70,19 @@
       Firstly type the following into the terminal 
       when located inside the project directory: 
 
-      ### make all 
+      * make all 
 
   * Server
   
       To run the Server type the following into the terminal 
       when located inside the project directory:
   
-      ### ./tsamgroup56 <Client port> <Server port>
+      * ./tsamgroup56 <Client port> <Server port>
 
   * Client
   
       To run the Server type the following into the terminal 
       when located inside the project directory:
   
-      ### ./client <Ip address> <Port number>
+      * ./client <Ip address> <Port number>
 
